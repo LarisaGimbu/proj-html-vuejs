@@ -2,7 +2,7 @@
   <main>
     <Jumbotron />
     <Recipes />
-    <h5>CULINARY COLLECTION</h5>
+    <Culinary />
     <h5>FARM TO TABLE</h5>
   </main>
 </template>
@@ -10,12 +10,14 @@
 <script>
 import Jumbotron from './Jumbotron.vue'
 import Recipes from './Recipes.vue'
+import Culinary from './Culinary.vue'
 
 export default {
   name: 'Main',
   components:{
     Jumbotron,
-    Recipes
+    Recipes,
+    Culinary
   }
 }
 </script>
