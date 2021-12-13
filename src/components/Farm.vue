@@ -1,5 +1,5 @@
 <template>
-  <div class="farm container pt-5 d-flex justify-content-between">
+  <div class="farm container pt-5 pb-5 d-flex justify-content-between">
     <div class="farm-content">
       <div class="description">
         <h3>FARM TO TABLE</h3>
