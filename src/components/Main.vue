@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h5>JUMBOTRON con foodie journal</h5>
+    <Jumbotron />
     <h5>POPULAR RECIPES</h5>
     <h5>CULINARY COLLECTION</h5>
     <h5>FARM TO TABLE</h5>
@@ -8,8 +8,13 @@
 </template>
 
 <script>
+import Jumbotron from './Jumbotron.vue'
+
 export default {
-  name: 'Main'
+  name: 'Main',
+  components:{
+    Jumbotron
+  }
 }
 </script>
 
