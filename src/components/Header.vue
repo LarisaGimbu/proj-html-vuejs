@@ -13,7 +13,7 @@
       <img src="../assets/img/avada-food-logo.png" alt="">
     </div>
 
-    <nav>NAVBAR</nav>
+    <nav class="d-flex justify-content-center"><h5>NAVBAR</h5></nav>
   </header>
 </template>
 
