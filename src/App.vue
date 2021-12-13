@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Header />
+    <Header 
+    :social='social'
+    :menu='menu'/>
     <Main />
     <Footer />
   </div>
@@ -17,11 +19,18 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data(){
+    return{
+      social:['facebook-f', 'instagram', 'twitter', 'youtube'],
+      menu:['Home', 'Recipes', 'Places', 'Blog', 'About', 'Contact']
+    }
   }
 }
 </script>
 
 <style lang="scss">
 @import './assets/style/general.scss';
+@import './assets/style/vars.scss';
 
 </style>
