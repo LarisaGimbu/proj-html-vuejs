@@ -39,8 +39,10 @@ export default {
 <style lang="scss">
 @import '../assets/style/general.scss';
 @import '../assets/style/vars.scss';
+@import '../assets/style/utilities.scss';
 
 .jumbotron{
+  position: relative;
   width: 100%;
   min-height: 80vh;
   background-image: url("../assets/img/single-post-img3.jpg");
@@ -68,12 +70,10 @@ export default {
     } 
   }
   .foodies{
+    position: absolute;
+    bottom: -330px;
+    padding: 20px 0 20px 0;
     background-color: white;
-    .points{
-      font-size: 0.8rem;
-      padding-bottom: 15px;
-      color: #E0DEDE;
-    }
   }
 }
 

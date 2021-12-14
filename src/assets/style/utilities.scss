@@ -1,5 +1,16 @@
-.my-button{
+@import './vars.scss';
+
+.btn.my-button{
   background-color: $primary-color;
   color: white;
   border: none;
+  font-size: 0.7rem;
+  padding: 10px 20px 10px 20px;
+  border-radius: 2px;
+}
+
+.points{
+  font-size: 0.8rem;
+  padding-bottom: 15px;
+  color: #E0DEDE;
 }
