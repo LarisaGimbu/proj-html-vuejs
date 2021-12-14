@@ -4,7 +4,7 @@
     <div class="todays-pick p-4 text-center">
       <div class="box-label p-2">TODAY'S PICK</div>
       <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-      <p class="date">March 25, 2019</p>
+      <p class="grey-text">March 25, 2019</p>
     </div>
     <div class="container foodies">
       <div class="foodie-title d-flex justify-content-center align-items-center">
@@ -12,7 +12,10 @@
         <h5 class="ps-5 pe-5">FOODIE JOURNAL</h5>
         <span class="points" v-for="punto in 120" :key="punto.i">.</span>
       </div>
-      <FoodCard />
+      <div class="cards d-flex justify-content-around">
+        <FoodCard v-for="card in 3" :key="card" />
+      </div>
+      
     </div>
   </div>
 </template>
@@ -64,9 +67,6 @@ export default {
       color: white;
       border-radius: 10px;
       box-shadow: 1px 1px 10px #AFAFAF;
-    }
-    .date{
-      color: $grey-text;
     } 
   }
   .foodies{

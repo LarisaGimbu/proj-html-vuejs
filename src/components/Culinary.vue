@@ -2,7 +2,7 @@
   <div class="culinary container pt-5">
     <div class="description text-center">
       <h3>CULINARY COLLECTION</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br/> Quam mollitia nam dignissimos facilis voluptatibus.</p>
+      <p class="grey-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br/> Quam mollitia nam dignissimos facilis voluptatibus.</p>
     </div>
     <div class="culinary-cards d-flex flex-wrap justify-content-between pt-5">
       <div 

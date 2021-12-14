@@ -2,7 +2,7 @@
   <div class="recipes container pt-5">
     <div class="title text-center">
       <h5>POPULAR RECIPES</h5>
-      <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/> Quam mollitia nam dignissimos facilis voluptatibus.</p>
+      <p class="grey-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/> Quam mollitia nam dignissimos facilis voluptatibus.</p>
     </div>
     <div class="content d-flex justify-content-between pt-5">
       <PopularCard />
@@ -38,9 +38,6 @@ export default {
 
 .recipes{
   margin-top: 360px;
-  .description{
-    color: $grey-text;
-  }
   aside{
     width: 48%;
     .image-box{
