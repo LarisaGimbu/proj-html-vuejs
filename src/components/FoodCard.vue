@@ -1,5 +1,5 @@
 <template>
-  <div class="my-card mt-4">
+  <div class="my-card mt-2 mb-2">
       <img src="../assets/img/single-post-img3-1200x790.jpg" alt="">
       <div class="description text-cxenter">
         <h4 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing</h4>
@@ -20,7 +20,7 @@ export default {
 
 .my-card{
   background-color: white;
-  width: 330px;
+  width: 350px;
   img{
     width: 100%;
   }
