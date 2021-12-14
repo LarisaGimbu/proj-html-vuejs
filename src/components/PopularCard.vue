@@ -7,7 +7,7 @@
       <div class="d-flex">
         <span class="points" v-for="punto in 120" :key="punto">.</span>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam modi dicta, inventore eos quae rem eius veritatis quis suscipit autem eaque deserunt error ab cupiditate natus voluptates dolorum, minus saepe!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam modi dicta, inventore eos quae rem eius veritatis quis suscipit autem eaque deserunt error ab cupiditate natus voluptates dolorum, minus saepe! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet libero non blanditiis minus saepe! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet libero non blanditiis</p>
       <button type="button" class="btn btn-danger my-button">LEARN MORE</button>
     </div>
   </div>
@@ -25,7 +25,7 @@ export default {
 @import '../assets/style/utilities.scss';
 
 .popular-card{
-  width: 45%;
+  width: 48%;
   background-color: white;
   img{
     width: 100%;

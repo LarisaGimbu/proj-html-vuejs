@@ -6,7 +6,11 @@
     </div>
     <div class="content d-flex justify-content-between pt-5">
       <PopularCard />
-      <h3>IMAGES</h3>
+      <aside class="d-flex flex-wrap justify-content-between">
+        <div v-for="image in 8" :key="image" class="image-box">
+          <img class="aside-images" src="../assets/img/Yogurt-Nan.jpg" alt="">
+        </div>
+      </aside>
     </div>
 
   </div>
@@ -19,6 +23,11 @@ export default {
   name: 'Recipes',
   components:{
     PopularCard
+  },
+  data(){
+    return{
+      images:[]
+    }
   }
 }
 </script>
@@ -31,6 +40,15 @@ export default {
   margin-top: 360px;
   .description{
     color: $grey-text;
+  }
+  aside{
+    width: 48%;
+    .image-box{
+      width: 47%;
+    }
+    .aside-images{
+      width: 100%;
+    }
   }
 }
 

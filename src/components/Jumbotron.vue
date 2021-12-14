@@ -10,7 +10,7 @@
       <div class="foodie-title d-flex justify-content-center align-items-center">
         <span class="points" v-for="punto in 120" :key="punto">.</span>
         <h5 class="ps-5 pe-5">FOODIE JOURNAL</h5>
-        <span class="points" v-for="punto in 120" :key="punto">.</span>
+        <span class="points" v-for="punto in 120" :key="punto.i">.</span>
       </div>
       <FoodCard />
     </div>
