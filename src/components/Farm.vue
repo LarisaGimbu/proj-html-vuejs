@@ -11,12 +11,12 @@
         <FoodCard v-for="card in 6" :key="card" />
       </div>
 
-      <button type="button" class="btn btn-outline-dark">LOAD MORE POSTS</button>
+      <button type="button" class=" loader btn btn-outline-dark mt-5">LOAD MORE POSTS</button>
     </div>
 
     <aside>
       <button type="button" class="btn btn-danger my-button">READ OUR BLOG</button>
-
+      
     </aside>
   </div>
 </template>
@@ -37,6 +37,13 @@ export default {
 <style lang="scss">
 .farm-content{
   width: 62%;
+  .loader{
+    background-color: #EDEDE7;
+    width: 100%;
+    border: none;
+
+  }
+ 
 }
 
 </style>
