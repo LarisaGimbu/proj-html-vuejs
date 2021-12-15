@@ -39,20 +39,25 @@
         <div class="icon pe-3">
           <img class="guide-img" :src="require(`../assets/img/${item.image}`)" alt="">
         </div>
-        <div class="data">
+        <div class="text">
           <p>{{item.title}}</p>
           <p class="grey-text">{{item.date}}</p>
         </div> 
       </div>
 
-      <div class="tweet">TWEET</div>
+      <Tweet />
     </div>
   </aside>
 </template>
 
 <script>
+import Tweet from './Tweet.vue'
+
 export default {
   name: 'FarmAside',
+  components:{
+    Tweet
+  },
   props:{
     social: Array,
   },
@@ -172,7 +177,13 @@ aside{
       }
     }
     .guide-img{
+      width: 45px;
+      height: 45px;
       border-radius: 50%;
+    }
+    p{
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
     }
   }
 }
