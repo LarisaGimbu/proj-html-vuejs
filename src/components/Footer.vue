@@ -1,7 +1,14 @@
 <template>
   <footer>
     <Subscribe />
-    <h3>IMAGES</h3>
+    
+    <div class="images d-flex">
+      <img 
+      v-for="(image, index) in images"
+      :key="index"
+      :src="require(`../assets/img/${image}`)" alt="">
+    </div>
+
     <Contacts />
     <div>
       <p>Copyright</p>
@@ -18,10 +25,20 @@ export default {
   components:{
     Subscribe,
     Contacts
+  },
+  data(){
+    return{
+      images:['Yogurt-Nan.jpg', 'Mixed-fruits.jpg', 'r-rachel-park-366508-unsplash-min.jpg', 'r-michelle-tsang-500721-unsplash-min.jpg']
+    }
   }
 }
 </script>
 
 <style lang="scss">
-
+.images{
+  width: 100%;
+  img{
+    width: calc(100% / 4);
+  }
+}
 </style>
