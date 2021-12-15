@@ -3,7 +3,8 @@
     <Header 
     :social='social'
     :menu='menu'/>
-    <Main />
+    <Main 
+    :social='social'/>
     <Footer />
   </div>
 </template>

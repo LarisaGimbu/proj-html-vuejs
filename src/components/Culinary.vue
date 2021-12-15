@@ -6,11 +6,11 @@
     </div>
     <div class="culinary-cards d-flex flex-wrap justify-content-between pt-5">
       <div 
-      v-for="card in 8"
-      :key="card"
+      v-for="(collection, index) in collections"
+      :key="index"
       class="culinary-card text-center">
-        <img src="../assets/img/drinks-recipes.png" alt="">
-        <p>DRINKS</p>
+        <img :src="require(`../assets/img/${collection.image}`)" alt="">
+        <p>{{collection.name}}</p>
       </div>
     </div>
   </div>
@@ -18,7 +18,45 @@
 
 <script>
 export default {
-  name: 'Culinary'
+  name: 'Culinary',
+  data(){
+    return{
+      collections:[
+        {
+          image: 'drinks-recipes.png',
+          name: 'DRINKS'
+        },
+        {
+          image: 'soups-recipes.png',
+          name: 'SOUPS'
+        },
+        {
+          image: 'baking-recipes.png',
+          name: 'BAKERY'
+        },
+        {
+          image: 'dinner-recipes.png',
+          name: 'DINNER'
+        },
+        {
+          image: 'healthy-recipes.png',
+          name: 'HEALTHY'
+        },
+        {
+          image: 'staff-picks.png',
+          name: 'STAFF PICKS'
+        },
+        {
+          image: 'premium-recipes.png',
+          name: 'APPETISERS'
+        },
+        {
+          image: 'quick-easy-recipes.png',
+          name: 'QUICK & EASY'
+        }
+      ]
+    }
+  }
 }
 </script>
 

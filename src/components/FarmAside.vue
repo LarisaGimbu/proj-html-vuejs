@@ -17,8 +17,13 @@
     </div>
 
     <div class="social pt-5">
-      <p>Follow Us</p>
-      <p>SOCIAL</p>
+      <p class="follow-us">Follow Us</p>
+      <ul>
+        <li
+        v-for="(item, index) in social" 
+        :key="index"
+        class="me-3"><a href="#"><i :class="`fab fa-${item}`"></i></a></li>
+      </ul>
     </div>
 
     <div class="guide">
@@ -27,13 +32,16 @@
         <button class="btn btn-outline-secondary guide-btn" type="button">Recent</button>
       </div>
 
-      <div class="guide-card d-flex pt-3">
-        <div class="icon">
-          <img class="guide-img" src="../assets/img/single-post-img3-66x66.jpg" alt="">
+      <div 
+      v-for="(item, index) in populars"
+      :key="index"
+      class="guide-card d-flex pt-3">
+        <div class="icon pe-3">
+          <img class="guide-img" :src="require(`../assets/img/${item.image}`)" alt="">
         </div>
         <div class="data">
-          <p>Text</p>
-          <p class="grey-text">Date</p>
+          <p>{{item.title}}</p>
+          <p class="grey-text">{{item.date}}</p>
         </div> 
       </div>
 
@@ -44,7 +52,31 @@
 
 <script>
 export default {
-  name: 'FarmAside'
+  name: 'FarmAside',
+  props:{
+    social: Array,
+  },
+  data(){
+    return{
+      populars:[
+        {
+          image: 'single-post-img3-66x66.jpg',
+          title: 'Food Corner: Top Japanese Restaurants for Sushi',
+          date:'March 25th, 2019'
+        },
+        {
+          image: 'singapore-featured-image-66x66.jpg',
+          title: 'City Guide: Singapore',
+          date:'February 27th, 2019'
+        },
+        {
+          image: 'slide1-bg-66x66.jpg',
+          title: '6 Nutritional Tips to Help Burn Body Fat',
+          date:'February 28th, 2019'
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -107,8 +139,25 @@ aside{
   .search-input{
     border-left: none;
   }
-  .social p{
-    color: $primary-color;
+  .social{
+    .follow-us{
+      color: $primary-color;
+    }
+    ul{
+      list-style: none;
+      li{
+        display: inline-block;
+        background-color: #EDEDE8;
+        border: 1px solid #E6E6E0;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        a{
+          text-decoration: none;
+          font-size: 0.8rem;
+          color: $grey-text;
+        }
+      }
+    }
   }
   .guide{
     .guide-btn{
@@ -123,8 +172,6 @@ aside{
       }
     }
     .guide-img{
-      // width: 50px;
-      // height: 50px;
       border-radius: 50%;
     }
   }

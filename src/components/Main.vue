@@ -3,7 +3,8 @@
     <Jumbotron />
     <Recipes />
     <Culinary />
-    <Farm />
+    <Farm 
+    :social='social'/>
   </main>
 </template>
 
@@ -20,6 +21,9 @@ export default {
     Recipes,
     Culinary,
     Farm
+  },
+  props:{
+    social: Array,
   },
   data(){
     return{

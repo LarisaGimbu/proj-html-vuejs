@@ -10,14 +10,19 @@
     <div class="farm-content d-flex justify-content-between">
       <div class="farm-cards">
         <FarmCard />
-        <div class="d-flex flex-wrap justify-content-between">
-          <FoodCard v-for="card in 6" :key="card" />
+        <div class="d-flex flex-wrap justify-content-between pt-5">
+          <FoodCard v-for="(food, index) in foodies" :key="index" 
+          :image="food.image"
+          :title="food.title"
+          :date="food.date" />
         </div>
 
         <button type="button" class=" loader btn btn-outline-dark mt-5">LOAD MORE POSTS</button>
       </div>  
 
-      <FarmAside />
+      <FarmAside 
+      :social='social'/>
+      
     </div>
   </div>
 </template>
@@ -33,6 +38,45 @@ export default {
     FarmCard,
     FoodCard,
     FarmAside
+  },
+  props:{
+    social: Array,
+  },
+  data(){
+    return{
+      foodies:[
+        {
+          image:'fi-roundup.jpg',
+          title:'Roundup: My New Favourite Recipes For Healthy Living',
+          date:'By admin | March 25th, 2019'
+        },
+        {
+          image: 'fi-korean-food.jpg',
+          title: 'Meal Prep: Korean Bibimbap with Kimchi',
+          date: 'By admin | March 25th, 2019'
+        },
+        {
+          image:'fi-toasts.jpg',
+          title:'Why These Toasts with Tea are My New Favourite',
+          date:'By admin | March 25th, 2019'
+        },
+        {
+          image: 'fi-street-food.jpg',
+          title: 'Exploring Street Food in Bankok',
+          date: 'By admin | March 25th, 2019'
+        },
+        {
+          image: 'fi-organic-breakfast.jpg',
+          title: 'Organic Choices For Healthies Living',
+          date: 'By admin | March 25th, 2019'
+        },
+        {
+          image: 'fi-water-side-rest.jpg',
+          title: '5 Waterside Restaurants in Istanbul for Special Events',
+          date: 'By admin | March 25th, 2019'
+        },
+      ]
+    }
   }
 }
 </script>
