@@ -1,6 +1,13 @@
 <template>
   <div class="popular-card">
-    <img src="../assets/img/Yogurt-Nan.jpg" alt="">
+    <div class="image">
+      <img src="../assets/img/Yogurt-Nan.jpg" alt="">
+      <div class="text-hover justify-content-center align-items-center flex-column">
+        <i class="fas fa-link"></i>
+        <h5 class="text-center pt-3">Lunch Favourite with Salad, Naan And Beans</h5>
+      </div>
+    </div>
+    
     <div class="popular-content">
       <h5>Lunch Favourite with Salad, Naan And Beans</h5>
       <p class="subtitle grey-text">Bakery, Featured, Healthy, Latest Recipes, Staff Picks</p>
@@ -27,8 +34,36 @@ export default {
 .popular-card{
   width: 48%;
   background-color: white;
-  img{
-    width: 100%;
+  .image{
+    position: relative;
+    img{
+      width: 100%;
+    }
+    .text-hover{
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      color: white;
+      background-image: linear-gradient($background-primary-color, $primary-color);
+      i{
+        background-color: white;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: $primary-color;
+        border-radius: 50%;
+        &:hover{
+          transform: scale(1.3);
+        }
+      }
+    }
+    &:hover .text-hover{
+      display: flex;
+      cursor: pointer;
+    }
   }
   .popular-content{
     width: 90%;

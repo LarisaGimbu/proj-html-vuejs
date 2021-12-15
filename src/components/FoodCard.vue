@@ -47,7 +47,7 @@ export default {
       width: 100%;
       height: 100%;
       color: white;
-      background-image: linear-gradient($light-primary-color, $primary-color);
+      background-image: linear-gradient($background-primary-color, $primary-color);
       i{
         background-color: white;
         padding: 10px;

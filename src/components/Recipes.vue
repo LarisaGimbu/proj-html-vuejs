@@ -44,11 +44,13 @@ export default {
   aside{
     width: 48%;
     .image-box{
+      position: relative;
       width: 47%;
+      .aside-images{
+        width: 100%;
+      }
     }
-    .aside-images{
-      width: 100%;
-    }
+    
   }
 }
 

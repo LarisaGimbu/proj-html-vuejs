@@ -61,6 +61,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/style/general.scss';
+@import '../assets/style/vars.scss';
+@import '../assets/style/utilities.scss';
+
   .culinary-cards{
     width: 100%;
     .culinary-card{
@@ -70,6 +74,15 @@ export default {
       margin-bottom: 25px;
       img{
         width: 40%;
+      }
+      p{
+        line-height: 50px;
+        width: 90%;
+        margin: 0 auto;
+      }
+      &:hover p{
+        background-color: $primary-color;
+        cursor: pointer;
       }
     }
   }
