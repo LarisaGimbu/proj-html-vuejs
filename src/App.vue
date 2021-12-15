@@ -5,7 +5,9 @@
     :menu='menu'/>
     <Main 
     :social='social'/>
-    <Footer />
+    <Footer 
+    :social='social'
+    :menu='menu'/>
   </div>
 </template>
 

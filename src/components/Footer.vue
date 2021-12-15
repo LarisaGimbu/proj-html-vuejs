@@ -9,7 +9,8 @@
       :src="require(`../assets/img/${image}`)" alt="">
     </div>
 
-    <Contacts />
+    <Contacts :social='social'
+    :menu='menu'/>
     <div>
       <p>Copyright</p>
     </div>
@@ -25,6 +26,10 @@ export default {
   components:{
     Subscribe,
     Contacts
+  },
+  props:{
+    social: Array,
+    menu: Array
   },
   data(){
     return{
