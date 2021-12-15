@@ -2,7 +2,7 @@
   <div class="farm-card">
     <img src="../assets/img/single-post-img3.jpg" alt="">
     <div class="farm-content">
-      <h5>Lorem ipsum dolor sit amet consectetur</h5>
+      <h5>Food Corner: Top Japanese Restaurants for Sushi</h5>
       <p class="subtitle grey-text">Lorem ipsum dolor sit amet, consectetur</p>
       <div class="d-flex">
         <span class="points" v-for="punto in 120" :key="punto">.</span>

@@ -2,8 +2,8 @@
   <div class="popular-card">
     <img src="../assets/img/Yogurt-Nan.jpg" alt="">
     <div class="popular-content">
-      <h5>Lorem ipsum dolor sit amet consectetur</h5>
-      <p class="subtitle grey-text">Lorem ipsum dolor sit amet, consectetur</p>
+      <h5>Lunch Favourite with Salad, Naan And Beans</h5>
+      <p class="subtitle grey-text">Bakery, Featured, Healthy, Latest Recipes, Staff Picks</p>
       <div class="d-flex">
         <span class="points" v-for="punto in 120" :key="punto">.</span>
       </div>

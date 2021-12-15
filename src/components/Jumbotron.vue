@@ -3,7 +3,7 @@
     
     <div class="todays-pick p-4 text-center">
       <div class="box-label p-2">TODAY'S PICK</div>
-      <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+      <h2>Food Corner: Top Japanese Restaurants for Sushi</h2>
       <p class="grey-text">March 25, 2019</p>
     </div>
     <div class="container foodies">
