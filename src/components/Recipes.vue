@@ -7,8 +7,8 @@
     <div class="content d-flex justify-content-between pt-5">
       <PopularCard />
       <aside class="d-flex flex-wrap justify-content-between">
-        <div v-for="image in 8" :key="image" class="image-box">
-          <img class="aside-images" src="../assets/img/Yogurt-Nan.jpg" alt="">
+        <div v-for="(image, index) in images" :key="index" class="image-box">
+          <img class="aside-images" :src="require(`../assets/img/${image}`)" alt="">
         </div>
       </aside>
     </div>
@@ -26,7 +26,7 @@ export default {
   },
   data(){
     return{
-      images:[]
+      images:['Mixed-fruits.jpg', 'r-rachel-park-366508-unsplash-min.jpg', 'r-michelle-tsang-500721-unsplash-min.jpg', 'quick-summer-drink-460x295.jpg', 'r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg', 'perfect-cosmopolitan-460x295.jpg', 'fi2x-6-460x295.jpg', 'r-brooke-lark-96398-unsplash-min-460x295.jpg']
     }
   }
 }
