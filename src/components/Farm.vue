@@ -17,17 +17,7 @@
         <button type="button" class=" loader btn btn-outline-dark mt-5">LOAD MORE POSTS</button>
       </div>  
 
-      <aside>
-        <div class="latest-recipes-box">
-          <!-- <img src="../assets/img/ad-bg.jpg" alt=""> -->
-          <h4 class="latest-recipes-text text-center">VIEW OUR LATEST RECIPES</h4>
-        </div>
-        <div class="singapore mt-5">
-          <h5 class="singapore-text">City Guide: Singapore</h5>
-        </div>
-        <button type="button" class="btn btn-danger my-button">VIEW ALL CITY GUIDES</button>
-        
-      </aside>
+      <FarmAside />
     </div>
   </div>
 </template>
@@ -35,17 +25,23 @@
 <script>
 import FarmCard from './FarmCard.vue'
 import FoodCard from './FoodCard.vue'
+import FarmAside from './FarmAside.vue'
 
 export default {
   name: 'Farm',
   components:{
     FarmCard,
-    FoodCard
+    FoodCard,
+    FarmAside
   }
 }
 </script>
 
 <style lang="scss">
+@import '../assets/style/general.scss';
+@import '../assets/style/vars.scss';
+@import '../assets/style/utilities.scss';
+
 .farm-cards{
   width: 68%;
   .loader{
@@ -55,43 +51,6 @@ export default {
 
   }
 }
-aside{
-  width: 28%;
-  .latest-recipes-box{
-    position: relative;
-    width: 100%;
-    height: 430px;
-    background-image: url("../assets/img/ad-bg.jpg");
-    background-size: cover;
-    
-    .latest-recipes-text{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 150px;
 
-    }
-  }
-  .singapore{
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-image: url('../assets/img/singapore-featured-image.jpg');
-    background-size: cover;
-    .singapore-text{
-      position: absolute;
-      top: 60%;
-      width: 230px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.781);
-      padding: 10px;
-    }
-  }
-  .my-button{
-    width: 100%;
-  }
-  
-}
 
 </style>
