@@ -20,6 +20,11 @@ export default {
     Recipes,
     Culinary,
     Farm
+  },
+  data(){
+    return{
+      
+    }
   }
 }
 </script>

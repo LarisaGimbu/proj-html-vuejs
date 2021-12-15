@@ -1,16 +1,21 @@
 <template>
   <div class="my-card mt-2 mb-2">
-      <img src="../assets/img/single-post-img3-1200x790.jpg" alt="">
+      <img :src="require(`../assets/img/${image}`)" alt="">
       <div class="description text-cxenter">
-        <h4 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing</h4>
-        <p class="text-center">Data</p>
+        <h5 class="text-center pt-3">{{title}}</h5>
+        <p class="text-center grey-text">{{date}} </p>
       </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'FoodCard'
+  name: 'FoodCard',
+  props:{
+    image: String,
+    title: String,
+    date: String
+  }
 }
 </script>
 

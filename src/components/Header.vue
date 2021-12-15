@@ -23,6 +23,7 @@
           v-for="item in menu"
           :key="item"
           class="pe-5 pt-3"><a href="#">{{item}}</a></li>
+          <li><i class="fas fa-search"></i></li>
         </ul>
       </nav>
     </div>
@@ -64,12 +65,22 @@ header{
       
   }
 }
-nav ul li a{
-  padding-bottom: 10px;
-  color: $normaltext-color;
-  &:hover{
-    border-bottom: 2px solid $primary-color;
-    color: $primary-color;
+nav ul li{
+  a{
+    padding-bottom: 10px;
+    color: $normaltext-color;
+    &:hover{
+      border-bottom: 2px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+  i{
+    font-size: 0.8rem;
+    padding: 10px;
+    &:hover{
+      cursor: pointer;
+      color: $primary-color;
+    }
   }
 }
 </style>

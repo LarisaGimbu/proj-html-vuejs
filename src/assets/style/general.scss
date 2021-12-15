@@ -3,7 +3,10 @@
 @import '~@fontsource/roboto/index.css';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
 
+@import './vars.scss';
+
 body{
   font-family: "Roboto", sans-serif;
   background-color: #F5F5F1;
+  color: $normaltext-color
 }

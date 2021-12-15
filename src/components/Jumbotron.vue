@@ -13,7 +13,10 @@
         <span class="points" v-for="punto in 120" :key="punto.i">.</span>
       </div>
       <div class="cards d-flex justify-content-around">
-        <FoodCard v-for="card in 3" :key="card" />
+        <FoodCard v-for="(food, index) in foodies" :key="index" 
+        :image="food.image"
+        :title="food.title"
+        :date="food.date" />
       </div>
       
     </div>
@@ -30,9 +33,23 @@ export default {
   },
   data(){
     return{
-      foodImg:['single-post-img3-1200x790.jpg', ],
-      foodTitle:['Lorem'],
-      foodDate:['2019']
+      foodies:[
+        {
+          image:'single-post-img3-1200x790.jpg',
+          title:'Food Corner: Top Japanese Restaurants for Sushi',
+          date:'By admin | March 25th, 2019'
+        },
+        {
+          image:'fi-roundup.jpg',
+          title:'Roundup: My New Favourite Recipes For Healthy Living',
+          date:'By admin | March 25th, 2019'
+        },
+        {
+          image:'fi-toasts.jpg',
+          title:'Why These Toasts with Tea are My New Favourite',
+          date:'By admin | March 25th, 2019'
+        }
+      ]
     }
   }
   
