@@ -11,8 +11,12 @@
 
     <Contacts :social='social'
     :menu='menu'/>
-    <div>
-      <p>Copyright</p>
+    <div class="copyright d-flex align-items-center justify-content-center">
+      <p class="grey-text">
+        <i class="far fa-copyright"></i>
+        Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress
+      </p>
+      <i class="fas fa-chevron-circle-up my-chevron"></i>
     </div>
   </footer>
 </template>
@@ -44,6 +48,24 @@ export default {
   width: 100%;
   img{
     width: calc(100% / 4);
+  }
+}
+.copyright{
+  position: relative;
+  height: 80px;
+  p{
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+  i{
+    color: #464646;
+    &.my-chevron{
+      position: absolute;
+      top: 5px;
+      left: 50px;
+      font-size: 2rem;
+    }
+    
   }
 }
 </style>
