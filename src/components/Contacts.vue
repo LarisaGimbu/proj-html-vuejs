@@ -16,8 +16,8 @@
         <ul>
           <li 
           v-for="item in menu"
-          :key="item"
-          class="pt-2 nav-bar"><a href="#">{{item}}</a></li>
+          :key="item.id"
+          class="pt-2 nav-bar"><a href="#">{{item.name}}</a></li>
         </ul>
       
       </div>

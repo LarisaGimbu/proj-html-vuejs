@@ -26,7 +26,38 @@ export default {
   data(){
     return{
       social:['facebook-f', 'instagram', 'twitter', 'youtube'],
-      menu:['Home', 'Recipes', 'Places', 'Blog', 'About', 'Contact']
+      menu:[
+        {
+          name: 'Home',
+          active: true,
+          id: 1234
+        },
+        {
+          name: 'Recipes',
+          active: false,
+          id: 2345
+        },
+        {
+          name: 'Places',
+          active: false,
+          id: 3456
+        },
+        {
+          name: 'Blog',
+          active: false,
+          id: 4567
+        },
+        {
+          name: 'About',
+          active: false,
+          id: 5678
+        },
+        {
+          name: 'Contact',
+          active: false,
+          id: 6789
+        },
+      ]
     }
   }
 }

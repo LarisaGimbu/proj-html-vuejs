@@ -21,8 +21,9 @@
         <ul>
           <li 
           v-for="item in menu"
-          :key="item"
-          class="pe-5 pt-3"><a href="#">{{item}}</a></li>
+          :key="item.id"
+          :class="{'active':item.active}"
+          class="pe-5 pt-3"><a href="#">{{item.name}}</a></li>
           <li><i class="fas fa-search"></i></li>
         </ul>
       </nav>
@@ -66,6 +67,13 @@ header{
   }
 }
 nav ul li{
+  &.active{
+    a{
+      border-bottom: 2px solid $primary-color;
+      color: $primary-color;
+    }
+    
+  }
   a{
     padding-bottom: 10px;
     color: $normaltext-color;
